@@ -22,7 +22,7 @@ async def on_ready():
 
 @bot.tree.command(name="sp", description="spam message")
 async def raid(interaction: discord.Interaction):
-    await interaction.response.send_message("fuck mibu", ephemeral=True)
+    await interaction.response.send_message(",", ephemeral=True)
 
     await asyncio.sleep(1)
 
