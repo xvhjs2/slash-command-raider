@@ -9,10 +9,7 @@ except:
     print('restart the script it should work now')
     os.system('pause')
 
-intents = discord.Intents.default()
-intents.message_content = True
-intents.guilds = True
-
+intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 @bot.event
@@ -31,3 +28,4 @@ async def raid(interaction: discord.Interaction):
         await asyncio.sleep(0.5)
 
 bot.run("enter your bot token here")
+
