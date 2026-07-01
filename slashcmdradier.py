@@ -24,7 +24,7 @@ async def raid(interaction: discord.Interaction):
     await asyncio.sleep(1)
 
     for i in range(5):
-        await interaction.followup.send("@everyone")
+        await interaction.followup.send("@everyone", allowed_mentions=discord.AllowedMentions(everyone=True))
         await asyncio.sleep(0.5)
 
 bot.run("enter your bot token here")
